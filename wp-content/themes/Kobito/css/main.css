@@ -1,0 +1,234 @@
+#container{
+  width:960px;
+  margin:0 auto;
+  color:#fff;
+  font-family: "HiraKakuProN-W6";
+ 
+  
+}
+header{
+  height:372px;
+  background-image: url(../images/header_BGSky.jpeg);
+  background-size: cover;
+  font-size:50px;
+  text-align: center;
+  line-height: 200px;
+}
+
+nav{
+  padding:10px;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  background: #ccc;
+  align-items:center;
+}
+nav ul{
+  display: flex;
+}
+#searchBox{
+  background: #aaa;
+  text-align: center;
+  padding:5px;
+}
+#seachBox label{
+  display: none;
+}
+#searchBox input[type="text"]{
+  height:34px;
+  width:400px;
+  font-size:20px;
+}
+
+#searchBox input[type="submit"]{
+  width:139px;
+  height:34px;
+  cursor: pointer;
+  background-color: rgb(64,112,255);
+  font-size:20px;
+  color:white;
+}
+#searchBox button{
+    width: 139px;
+    height: 34px;
+    cursor: pointer;
+    background-color: rgb(64, 112, 255);
+    font-size:20px;
+    color:white;
+}
+
+nav ul li a{
+  display: block;
+  padding:20px;
+  border-radius: 5px;
+  border:1px solid #fff;
+  margin-left:10px;
+  background: #fff;
+}
+
+
+#mainWrapper{
+  display: flex;
+}
+
+#mainContents{
+  flex:1;
+  min-height:500px;
+  background-color:#00a3af;
+}
+
+
+.blogItem{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  border:1px solid #333;
+  border-radius:5px;
+  padding:16px 20px 50px;
+  margin:10px;
+  background:white;
+
+}
+.blogItem > div{
+  margin:10px;
+}
+.blogItem > div >p:first-child{
+  margin-bottom:10px;
+}
+.blogItem > div >p{
+  color:#333;
+}
+.blogItem > a{
+  position:absolute;
+  display: block;
+  padding:10px;
+  border-radius: 5px;
+  background:rgb(64, 112, 255);
+  text-decoration: none;
+  color:white;
+  bottom:15px;
+  right:20px;
+}
+#sideContents{
+  width:300px;
+  min-height:500px;
+  background-color:#e3ffff;
+}
+
+#inquire{
+  display: inline-block;
+  animation:prunprun 2.2s ease-in infinite;
+  -webkit-animation: prunprun 2.2s ease-in infinite;
+  -moz-animation: prunprun 2.2s ease-in infinite;
+  -o-animation: prunprun 2.2s ease-in infinite;
+  -ms-animation:prunprun 2.2 ease-in infinite;
+}@keyframes prunprun{
+  48%,62%{transform:scale(1.0,1.0);}
+  50%{transform: scale(1.1,0.9);}
+  56%{transform: scale(0.9,1.1)translate(0,-5px);}
+  59%{transform: scale(1.0,1.0)translate(0,-3px);}
+}
+@-webkit-keyframes prunprun{
+  48%,62%{transform:scale(1.0,1.0);}
+  50%{transform: scale(1.1,0.9);}
+  56%{transform: scale(0.9,1.1)translate(0,-5px);}
+  59%{transform: scale(1.0,1.0)translate(0,-3px);}
+}
+footer{
+  height:50px;
+  background-color:#ccc;
+  font-size:20px;
+  text-align: center;
+  line-height: 50px;
+}
+  /***single.php***/
+.blogItem h1{
+  padding:10px;
+  margin-bottom:20px;
+  font-size:20px;
+  border-bottom:2px solid #aaa;
+  border-left:5px solid #aaa;
+  color:black;
+}
+.blogInfo{
+  margin-bottom:20px;
+}
+.blogInfo a{
+  display: inline-block;
+  padding:8px;
+  background: rgb(64, 112, 255);
+  color:white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.blogItem p{
+  line-height: 1.5;
+  margin-bottom:20px;
+}
+/***sidebar****/
+.categoryBox>div{
+  color:#333;
+  background:#eee;
+  padding: 5px;
+}
+
+.categoryBox > ul{
+  padding: 5px 20px;
+  margin-bottom: 10px;
+}
+.categoryBox >ul >li{
+  margin: 10px;
+  color:black;
+}
+.archiveTitle{
+  font-size:20px;
+  padding:10px;
+  border-bottom: -2px solid #444;
+  border-left: #eee;
+}
+/***page-profile***/
+.page{
+  background: #eee;
+  padding:30px;
+  min-height: 500px;
+}
+.page h1{
+  font-size:20px;
+  padding:10px;
+  margin-bottom:20px;
+  background:white;
+  border-left:5px solid #333;
+  border-bottom:2px solid #333;
+  color:#333;
+}
+.page .alignwide{
+  width:90%;
+  margin:0 auto;
+}
+
+.page .wp-block-media-text{
+  grid-template-columns:30%;
+}
+
+.page .wp-block-media-text__content p{
+  margin-bottom:10px;
+}
+.wp-block-preformatted {
+  white-space: pre-wrap;
+  color: black;
+}
+
+/***search***/
+#searchResult{
+  font-size:20px;
+  background:#eee;
+  border-left:5px solid #333;
+  border-bottom:2px solid #333;
+  margin-bottom:20px;
+  padding:10px;
+}
+#resultZero{
+  font-size:20px;
+  padding:20px;
+}
