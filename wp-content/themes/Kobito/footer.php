@@ -1,5 +1,5 @@
 <footer>
-      Footer
+    Copyright@ URG All Rights Reserved  
     </footer>
   </div><!--container-->
 <?php wp_footer();?>

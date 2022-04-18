@@ -7,7 +7,7 @@
   
 }
 header{
-  height:372px;
+  height:423px;
   background-image: url(../images/header_BGSky.jpeg);
   background-size: cover;
   font-size:50px;
@@ -74,7 +74,7 @@ nav ul li a{
 #mainContents{
   flex:1;
   min-height:500px;
-  background-color:#00a3af;
+  background-color:#a2a5a5;
 }
 
 
@@ -113,11 +113,17 @@ nav ul li a{
 #sideContents{
   width:300px;
   min-height:500px;
-  background-color:#e3ffff;
+  background-color:#f5f8f8;
 }
 
 #inquire{
-  display: inline-block;
+
+  display: block;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    margin-left: -26px;
+    background: #fff;
   animation:prunprun 2.2s ease-in infinite;
   -webkit-animation: prunprun 2.2s ease-in infinite;
   -moz-animation: prunprun 2.2s ease-in infinite;
@@ -189,6 +195,7 @@ footer{
 }
 /***page-profile***/
 .page{
+  color:black;
   background: #eee;
   padding:30px;
   min-height: 500px;
@@ -221,6 +228,7 @@ footer{
 
 /***search***/
 #searchResult{
+  color:black;
   font-size:20px;
   background:#eee;
   border-left:5px solid #333;
@@ -231,4 +239,26 @@ footer{
 #resultZero{
   font-size:20px;
   padding:20px;
+}
+/***404***/
+#notFound{
+  font-size:20px;
+  background:#eee;
+  border-left:5px solid #333;
+  border-bottom:2px solid #333;
+  margin-bottom:20px;
+  padding:10px;
+}
+
+#notFoundP{
+  font-size:20px;
+  text-align: center;
+  line-height:1.5;
+}
+.youtubeReview{
+  margin-right: 15px;
+}
+#page-125{
+display: inline-block;
+text-align:center;
 }

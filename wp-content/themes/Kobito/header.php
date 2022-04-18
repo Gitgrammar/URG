@@ -21,7 +21,7 @@
      英語レッスンURGへようこそ！
     </header>
     <div id="searchBox">
-      <?php get_search_form();?>
+    <?php get_search_form();?> 
     </div>
     <nav>
     <div id="logo">
@@ -29,12 +29,12 @@
           <img src="<?php echo get_template_directory_uri();?>/images/home.png">
         </a>
       </div>
-      <ul>
-        <li><a href="">ホーム</a></li>
-        <li><a href="">レッスンメニュー</a></li>
-        <li id="ameblo" class="blog"><a href="https:ameblo.jp/youaregreatenglish">アメブロ</a></li>
-        <li id="student" class="customer"><a href="https://m.youtube.com/watch?v=bZq6-L0cd_U&feature=youtube.be">お客様の声</a></li>
-        <li><a href="">サービス案内</a></li>
-        <li id="inquire" class="prupru"><a href="https://lin.ee/upqJDG3">お問い合わせ</a></li>
+      <?php
+      $args=array(
+        'menu'=>'global-nav',
+        'container'=>false
+      );
+      wp_nav_menu($args);
+      ?> <li id="inquire" class="prupru"><a href="http://localhost/URG/%e3%81%8a%e5%95%8f%e3%81%84%e5%90%88%e3%82%8f%e3%81%9b/">お問い合わせ</a></li>
       </ul>
     </nav>
